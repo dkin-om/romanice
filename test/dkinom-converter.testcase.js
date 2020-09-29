@@ -1,0 +1,30 @@
+import romanice from '../src/index';
+
+export default {
+  converter: romanice(['D', 'K', 'I', 'N', 'O', 'M']),
+  testCases: [
+    { decimal: 0, roman: '' },
+    { decimal: 1, roman: 'D' },
+    { decimal: 2, roman: 'DD' },
+    { decimal: 3, roman: 'DDD' },
+    { decimal: 4, roman: 'DK' },
+    { decimal: 5, roman: 'K' },
+    { decimal: 6, roman: 'KD' },
+    { decimal: 7, roman: 'KDD' },
+    { decimal: 8, roman: 'KDDD' },
+    { decimal: 9, roman: 'DI' },
+    { decimal: 10, roman: 'I' },
+    { decimal: 11, roman: 'ID' },
+    { decimal: 12, roman: 'IDD' },
+    { decimal: 39, roman: 'IIIDI' },
+    { decimal: 50, roman: 'N' },
+    { decimal: 100, roman: 'O' },
+    { decimal: 160, roman: 'ONI' },
+    { decimal: 207, roman: 'OOKDD' },
+    { decimal: 246, roman: 'OOINKD' },
+    { decimal: 500, roman: 'M' },
+    { decimal: 789, roman: 'MOONIIIDI' },
+    { decimal: 888, roman: 'MOOONIIIKDDD' },
+    { decimal: 899, roman: 'MOOOIODI' },
+  ],
+};
