@@ -10,9 +10,9 @@
     "build": "babel src -d lib",
     "lint": "eslint --ignore-path .gitignore .",
     "pretest": "npm run lint",
-    "test": "mocha --require @babel/register --reporter spec ./test/**/*.test.js",
+    "test": "mocha --require @babel/register ./test/**/*.test.js --reporter spec",
     "test:cover": "nyc --reporter=lcov --reporter=text npm run test -- --reporter dot",
-    "test:ci": "nyc --reporter=lcovonly npm run test -- --reporter dot"
+    "test:ci": "nyc --reporter=lcovonly npm run test -- --reporter dot && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/register": "^7.11.5",
+    "coveralls": "^3.1.0",
     "eslint": "^7.10.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.1",
