@@ -1,4 +1,4 @@
-import romanice from '../src/index';
+import { romanice } from '../src/index';
 
 export default {
   converter: romanice(),

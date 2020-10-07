@@ -1,4 +1,4 @@
-import romanice from '../src/index';
+const { romanice } = require('../src/index');
 
 export default {
   converter: romanice(['D', 'K', 'I', 'N', 'O', 'M']),

@@ -10,7 +10,8 @@ const areDistinct = (symbols) => {
   });
 };
 
-export default function romanice(symbols = standardSymbols) {
+// eslint-disable-next-line import/prefer-default-export
+export function romanice(symbols = standardSymbols) {
   if (!(symbols.length > 0 && areDistinct(symbols))) {
     throw new Error('symbols must be distinct, e.g. I, V, X, L, C, D, M');
   }
