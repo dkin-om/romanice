@@ -1,7 +1,7 @@
-import { romanice } from '../src/index';
+import { romanice, symbols } from '../src/index';
 
 export default {
-  converter: romanice(['Ⅰ', 'Ⅴ', 'Ⅹ', 'Ⅼ', 'Ⅽ', 'Ⅾ', 'ↀ', 'ↁ', 'ↂ']),
+  converter: romanice(symbols.UNICODE),
   testCases: [
     { decimal: 0, roman: '' },
     { decimal: 1, roman: 'Ⅰ' },

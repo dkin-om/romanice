@@ -33,8 +33,8 @@ const decimal = standardConverter.fromRoman('MMMCMXCIX');
 ### Unicode - `Ⅰ`, `Ⅴ`, `Ⅹ`, `Ⅼ`, `Ⅽ`, `Ⅾ`, `ↀ`, `ↁ`, `ↂ`
 
 ```javascript
-const { romanice } = require('romanice');
-const unicodeConverter = romanice(['Ⅰ', 'Ⅴ', 'Ⅹ', 'Ⅼ', 'Ⅽ', 'Ⅾ', 'ↀ', 'ↁ', 'ↂ']);
+const { romanice, symbols } = require('romanice');
+const unicodeConverter = romanice(symbols.UNICODE);
 
 const roman = unicodeConverter.toRoman(38888);
 // roman === 'ↂↂↂↁↀↀↀⅮⅭⅭⅭⅬⅩⅩⅩⅤⅠⅠⅠ'
@@ -47,7 +47,7 @@ const decimal = unicodeConverter.fromRoman('ↂↂↂↀↂⅭↀⅩⅭⅠⅩ');
 
 ### *`romanice([symbols])`*
 
-*`symbols`* - Array of Roman numeral symbols representing the character set. If omitted, assumes the default `['I', 'V', 'X', 'L', 'C', 'D', 'M']`.
+*`symbols`* - Array of Roman numeral symbols representing the character set. If omitted, assumes the standard symbols `['I', 'V', 'X', 'L', 'C', 'D', 'M']`.
 
 ## License
 

@@ -1,4 +1,4 @@
-import standardSymbols from './standard-symbols';
+import { standardSymbols, unicodeSymbols } from './symbols';
 
 import { toRoman, fromRoman } from './converter';
 
@@ -10,7 +10,6 @@ const areDistinct = (symbols) => {
   });
 };
 
-// eslint-disable-next-line import/prefer-default-export
 export function romanice(symbols = standardSymbols) {
   if (!(symbols.length > 0 && areDistinct(symbols))) {
     throw new Error('symbols must be distinct, e.g. I, V, X, L, C, D, M');
@@ -21,3 +20,8 @@ export function romanice(symbols = standardSymbols) {
     fromRoman: (num) => fromRoman(num, symbols),
   };
 }
+
+export const symbols = {
+  STANDARD: standardSymbols,
+  UNICODE: unicodeSymbols,
+};
