@@ -25,3 +25,5 @@ export const symbols = {
   STANDARD: standardSymbols,
   UNICODE: unicodeSymbols,
 };
+
+export default romanice;

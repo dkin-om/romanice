@@ -1,4 +1,5 @@
-import { romanice } from '../src/index';
+// eslint-disable-next-line import/no-named-as-default
+import romanice from '../src/index';
 
 export default {
   converter: romanice(),
