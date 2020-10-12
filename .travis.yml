@@ -1,7 +1,8 @@
 language: node_js
 node_js:
-  - lts/*
-  - node
+  - '10'
+  - '12'
+  - '14'
 install:
   - npm ci
 script:
@@ -11,9 +12,9 @@ deploy:
   provider: npm
   email: bhargav@dkinom.dev
   api_key:
-    secure: gO16LZEKp2l1v3PU8L+eMaTr1l7kdvOn6Dc0RItRs5Dns8UVSqUZZ7c96rAWg1yO+UoeHhTshxlMe0fagMm9c82Q43PEWq4NfSY8NVkVWOsDPYqk9vjLdFtOf2ePQjM/yZprjQXdZ1KJZhQllsDEkTBhqocmwANeWAfY7eHHOfSPv1/bRqyIdRNst0aqW79qRSRv/siYfn6kzuJL3j4nl3Tx2FFxB4iTMSvIdGCc5G7jYqky8opc/s0R29pAULaelf7fT7IxzDvagkGkcyXpnY/FJj+d0h0eIjL29wIil5TF6z7DbvnilOgNtg6esONsu2LiQD8awdFoMytVSyO6mFE7q4FF6jL9gsJOMS2ZtppAvEq0VhuUJhLAHG3FiXjSV77NRFv4kTwH6SLRwtihRZSMK2w7sL63WqliUmZvBcZa9IhuUXAjxBGrnEvbLlQPMCOqwuWCtGkzNrQRNRoSUI7hi6TvwTet051opzjZgYlTk15shkfneqXR8Oe2ed5ZxvyuXxNGuQx4wXWvWi6YMzADez6wARz819PDU02iq1Mkof5eV1S5UqBCGSYaFg1dDow/SkgkB9QkfWOKEHydI+CWD+5VbjEg9zmXWmO7GkbRYs+STb6KuaqoaOVlq+ZgpmL9ebIg/nwAk9fRsk2j6JUCfFNxe0s7NVdCdu9eCcA=
+    secure: OD6C4ScqfN6PPxjjUH5R2zUeJ1/oZ69bZ+0iHsG0NJbZ9+w8kIWJOW6k96ro1DjQwyhkm+p9uvfYTz2Ph6muW1fgyBbyZkoLGic41npS58aO1kiRsxtQx27TymErxmpBLiymR/Ne2Hj4IVZn6eIDSDwKLdt2vM2s5fS1l74XO+0XC77gZ6kSB6pD5hsMmY756QWOcjf1ZyPv/4gk0Ys9Ax9rlDPYIyzWGi2WLJeQrofi6itaPTHEuXbi8gp/cr8UNvJW4b6QPOjJTOV7xlhArh+zNN2nBkiRxvnhIjC79V48IizmKX2clK7F6S5SjdPM8uWge17WVFYKoiw7FUwoLScOx9GDGRw9F4LZpoV28RqsxSGLI4Jrs3AF2n+89B+QrcQ1dMHnwZCJkHIsPifYltsfWvocBSlyyLbEDPFWsHAhKik8DSoPTqUatsTU/Sx8FVyGaAWD/j9tBceklWkJBcGJI6StXioC4MpVEGpV5C8/L3VDHop5mUDJuVl8/5E/bdpR6RXzK4ze0+yPbAR01HQOOpy3BFATBPi+PpSQUIQDIJQIsn4XJu5uAotvahHGOCMu6SrBX4q+Rv5EVgG0UmpZSkdez3yWM16OkWSJtHcw6SM8TShW8gxf+YqFxYhXXOjIDDDrR5EzhC/DXjkcdckZCiLrqXt7Bw19V38UhpY=
   on:
-    node_js: lts/*
+    node_js: '12'
     tags: true
     repo: dkin-om/romanice
   skip_cleanup: true
