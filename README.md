@@ -7,7 +7,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/dkin-om/romanice/badge.svg)](https://coveralls.io/github/dkin-om/romanice)
 [![License](https://img.shields.io/npm/l/romanice)](https://github.com/dkin-om/romanice/blob/master/LICENSE)
 
-A JavaScript library for converting to/from Roman numerals, e.g., `3888`↔`MMMDCCCLXXXVIII`, `3999`↔`MMMCMXCIX`
+A JavaScript library for converting to/from Roman numerals, e.g., `3888`↔`MMMDCCCLXXXVIII`, `38888`↔`ↂↂↂↁↀↀↀⅮⅭⅭⅭⅬⅩⅩⅩⅤⅠⅠⅠ`
 
 ## Install
 
@@ -15,12 +15,32 @@ A JavaScript library for converting to/from Roman numerals, e.g., `3888`↔`MMMD
 npm install romanice
 ```
 
+## Import
+
+### CommonJS
+
+```javascript
+const Romanice = require('romanice');
+```
+
+### ES6
+
+```javascript
+import * as Romanice from 'romanice';
+```
+
+### Browser
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/romanice/dist/romanice.min.js"></script>
+```
+
 ## Usage
 
 ### Standard - `I`, `V`, `X`, `L`, `C`, `D`, `M`
 
 ```javascript
-const { romanice } = require('romanice');
+const { romanice } = Romanice;
 const standardConverter = romanice();
 
 const roman = standardConverter.toRoman(3888);
@@ -33,7 +53,7 @@ const decimal = standardConverter.fromRoman('MMMCMXCIX');
 ### Unicode - `Ⅰ`, `Ⅴ`, `Ⅹ`, `Ⅼ`, `Ⅽ`, `Ⅾ`, `ↀ`, `ↁ`, `ↂ`
 
 ```javascript
-const { romanice, symbols } = require('romanice');
+const { romanice, symbols } = Romanice;
 const unicodeConverter = romanice(symbols.UNICODE);
 
 const roman = unicodeConverter.toRoman(38888);

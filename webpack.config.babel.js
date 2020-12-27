@@ -6,7 +6,7 @@ export default {
   output: {
     path: resolvePath(__dirname, 'dist'),
     filename: 'romanice.min.js',
-    library: 'romanice',
+    library: 'Romanice',
     libraryTarget: 'umd',
     globalObject: 'this',
   },
