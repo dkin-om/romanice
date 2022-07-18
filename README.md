@@ -3,7 +3,7 @@
 [![NPM](https://nodei.co/npm/romanice.png?compact=true)](https://npm.im/romanice)
 
 [![Version](https://img.shields.io/npm/v/romanice)](https://npm.im/romanice)
-[![Build Status](https://travis-ci.com/dkin-om/romanice.svg?branch=master)](https://travis-ci.com/dkin-om/romanice)
+[![Build Status](https://travis-ci.com/dkin-om/romanice.svg?branch=master)](https://app.travis-ci.com/github/dkin-om/romanice)
 [![Coverage Status](https://coveralls.io/repos/github/dkin-om/romanice/badge.svg)](https://coveralls.io/github/dkin-om/romanice)
 [![License](https://img.shields.io/npm/l/romanice)](https://github.com/dkin-om/romanice/blob/master/LICENSE)
 
